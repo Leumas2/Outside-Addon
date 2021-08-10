@@ -1,0 +1,51 @@
+{
+	"format_version": 2,
+	"header": {
+		"name": "pack.name",
+		"description": "pack.description",
+		"uuid": "0570d21d-048f-4a98-9bc8-4d5d7f2d5f5f",
+		"version": [
+			1,
+			0,
+			0
+		],
+		"min_engine_version": [
+			1,
+			13,
+			0
+		]
+	},
+	"modules": [
+		{
+			"type": "resources",
+			"uuid": "373dbec3-7b4f-484d-9a99-386a9bf6e983",
+			"version": [
+				1,
+				0,
+				0
+			]
+		}
+   ],
+   "subpacks": [ 
+         {
+   "folder_name": "Outside With Everything",
+      "name": "With Everything",
+      "memory_tier": 1
+      },
+   {
+   "folder_name": "Outside With Out Custom GUI",
+      "name": "Without Custom GUI",
+      "memory_tier": 1
+      },
+   {
+   "folder_name": "Outside With Out Custom GUI And Gradient",
+      "name": "Without Custom GUI and Gradient",
+      "memory_tier": 1
+      },
+   {
+   "folder_name": "Outside With Out Gradient",
+      "name": "Without Gradient",
+      "memory_tier": 1
+      }
+   ]
+}
