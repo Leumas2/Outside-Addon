@@ -1,0 +1,39 @@
+{
+	"format_version": "2",
+	"header": {
+		"name": "Outside",
+		"description": "This addon is inspired by the create mod, and will try to implement as many features",
+		"uuid": "cff05ed3-2e2a-4ca3-adc8-ff59e4dbe13a",
+		"version": [
+			1,
+			0,
+			0
+		],
+		"min_engine_version": [
+			1,
+			13,
+			0
+		]
+	},
+	"modules": [
+		{
+			"type": "data",
+			"uuid": "a809ddd1-d619-4e86-9c05-05f3fd209b97",
+			"version": [
+				1,
+				0,
+				0
+			]
+		}
+	],
+	"dependencies": [
+		{
+			"version": [
+				1,
+				0,
+				0
+			],
+			"uuid": "f471c74d-2924-4aff-8c82-2a1ad1aa7f18"
+		}
+	]
+}
