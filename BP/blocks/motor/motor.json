@@ -1,0 +1,425 @@
+{
+	"format_version": "1.17.0",
+	"minecraft:block": {
+		"description": {
+			"identifier": "outside:motor",
+			"properties": {
+				"outside:motor_direction": [
+					0,
+					1,
+					2,
+					3,
+					4,
+					5,
+					6,
+					7
+				]
+			}
+		},
+		"permutations": [
+			{
+				"condition": "query.block_property('outside:motor_direction') == 0",
+				"components": {
+					"minecraft:rotation": [
+						0,
+						180,
+						0
+					]
+				}
+			},
+			{
+				"condition": "query.block_property('outside:motor_direction') == 1",
+				"components": {
+					"minecraft:rotation": [
+						0,
+						0,
+						0
+					]
+				}
+			},
+			{
+				"condition": "query.block_property('outside:motor_direction') == 2",
+				"components": {
+					"minecraft:rotation": [
+						0,
+						270,
+						0
+					]
+				}
+			},
+			{
+				"condition": "query.block_property('outside:motor_direction') == 3",
+				"components": {
+					"minecraft:rotation": [
+						0,
+						90,
+						0
+					]
+				}
+			},
+			{
+				"condition": "query.block_property('outside:motor_direction') == 4",
+				"components": {
+					"minecraft:rotation": [
+						0,
+						0,
+						0
+					],
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "motor_p",
+							"render_method": "alpha_test"
+						}
+					}
+				}
+			},
+			{
+				"condition": "query.block_property('outside:motor_direction') == 5",
+				"components": {
+					"minecraft:rotation": [
+						0,
+						270,
+						0
+					],
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "motor_p",
+							"render_method": "alpha_test"
+						}
+					}
+				}
+			},
+			{
+				"condition": "query.block_property('outside:motor_direction') == 6",
+				"components": {
+					"minecraft:rotation": [
+						0,
+						90,
+						0
+					],
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "motor_p",
+							"render_method": "alpha_test"
+						}
+					}
+				}
+			},
+			{
+				"condition": "query.block_property('outside:motor_direction') == 7",
+				"components": {
+					"minecraft:rotation": [
+						0,
+						180,
+						0
+					],
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "motor_p",
+							"render_method": "alpha_test"
+						}
+					}
+				}
+			}
+		],
+		"components": {
+			"minecraft:geometry": "geometry.motor",
+			"minecraft:destroy_time": 999999999,
+			"minecraft:explosion_resistance": 0,
+			"minecraft:block_light_emission": 0,
+			"minecraft:block_light_absorption": 0,
+			"minecraft:material_instances": {
+				"*": {
+					"texture": "motor",
+					"render_method": "alpha_test"
+				}
+			},
+			"minecraft:on_interact": {
+				"event": "outside:motor_interact"
+			},
+			"minecraft:on_player_placing": {
+				"event": "outside:motor_place"
+			}
+		},
+		"events": {
+			"outside:motor_place": {
+				"set_block_property": {
+					"outside:motor_direction": 1
+				}
+			},
+			"outside:motor_interact": {
+				"sequence": [
+					{
+						"condition": "query.get_equipped_item_name == 'wrench'",
+						"sequence": [
+							{
+								"condition": "query.block_property('outside:motor_direction') == 0",
+								"set_block_property": {
+									"outside:motor_direction": 1
+								}
+							},
+							{
+								"condition": "query.block_property('outside:motor_direction') == 1",
+								"set_block_property": {
+									"outside:motor_direction": 2
+								}
+							},
+							{
+								"condition": "query.block_property('outside:motor_direction') == 2",
+								"set_block_property": {
+									"outside:motor_direction": 3
+								}
+							},
+							{
+								"condition": "query.block_property('outside:motor_direction') == 3",
+								"set_block_property": {
+									"outside:motor_direction": 0
+								}
+							}
+						]
+					},
+					{
+						"condition": "query.get_equipped_item_name == 'remover'",
+						"sequence": [
+							{
+								"condition": "query.block_property('outside:motor_direction') == 0",
+								"run_command": {
+									"command": [
+										"setblock ~ ~ ~ minecraft:air",
+										"give @p outside:motor_4"
+									]
+								}
+							},
+							{
+								"condition": "query.block_property('outside:motor_direction') == 1",
+								"run_command": {
+									"command": [
+										"setblock ~ ~ ~ minecraft:air",
+										"give @p outside:motor_4"
+									]
+								}
+							},
+							{
+								"condition": "query.block_property('outside:motor_direction') == 2",
+								"run_command": {
+									"command": [
+										"setblock ~ ~ ~ minecraft:air",
+										"give @p outside:motor_4"
+									]
+								}
+							},
+							{
+								"condition": "query.block_property('outside:motor_direction') == 3",
+								"run_command": {
+									"command": [
+										"setblock ~ ~ ~ minecraft:air",
+										"give @p outside:motor_4"
+									]
+								}
+							},
+							{
+								"condition": "query.block_property('outside:motor_direction') == 4",
+								"run_command": {
+									"command": [
+										"setblock ~ ~ ~ minecraft:air",
+										"give @p outside:motor_4"
+									]
+								}
+							},
+							{
+								"condition": "query.block_property('outside:motor_direction') == 5",
+								"run_command": {
+									"command": [
+										"setblock ~ ~ ~ minecraft:air",
+										"give @p outside:motor_4"
+									]
+								}
+							},
+							{
+								"condition": "query.block_property('outside:motor_direction') == 6",
+								"run_command": {
+									"command": [
+										"setblock ~ ~ ~ minecraft:air",
+										"give @p outside:motor_4"
+									]
+								}
+							},
+							{
+								"condition": "query.block_property('outside:motor_direction') == 7",
+								"run_command": {
+									"command": [
+										"setblock ~ ~ ~ minecraft:air",
+										"give @p outside:motor_4"
+									]
+								}
+							}
+						]
+					},
+					{
+						"condition": "query.get_equipped_item_name == 'goggles'",
+						"sequence": [
+							{
+								"condition": "query.block_property('outside:motor_direction') == 0",
+								"run_command": {
+									"command": [
+										"title @p actionbar 0 blocks left"
+									]
+								}
+							},
+							{
+								"condition": "query.block_property('outside:motor_direction') == 1",
+								"run_command": {
+									"command": [
+										"title @p actionbar 0 blocks left"
+									]
+								}
+							},
+							{
+								"condition": "query.block_property('outside:motor_direction') == 2",
+								"run_command": {
+									"command": [
+										"title @p actionbar 0 blocks left"
+									]
+								}
+							},
+							{
+								"condition": "query.block_property('outside:motor_direction') == 3",
+								"run_command": {
+									"command": [
+										"title @p actionbar 0 blocks left"
+									]
+								}
+							},
+							{
+								"condition": "query.block_property('outside:motor_direction') == 4",
+								"run_command": {
+									"command": [
+										"title @p actionbar 4 blocks left"
+									]
+								}
+							},
+							{
+								"condition": "query.block_property('outside:motor_direction') == 5",
+								"run_command": {
+									"command": [
+										"title @p actionbar 4 blocks left"
+									]
+								}
+							},
+							{
+								"condition": "query.block_property('outside:motor_direction') == 6",
+								"run_command": {
+									"command": [
+										"title @p actionbar 4 blocks left"
+									]
+								}
+							},
+							{
+								"condition": "query.block_property('outside:motor_direction') == 7",
+								"run_command": {
+									"command": [
+										"title @p actionbar 4 blocks left"
+									]
+								}
+							}
+						]
+					},
+					{
+						"condition": "query.get_equipped_item_name == 'lever'",
+						"sequence": [
+							{
+								"condition": "query.block_property('outside:motor_direction') == 0",
+								"set_block_property": {
+									"outside:motor_direction": 7
+								}
+							},
+							{
+								"condition": "query.block_property('outside:motor_direction') == 1",
+								"set_block_property": {
+									"outside:motor_direction": 4
+								}
+							},
+							{
+								"condition": "query.block_property('outside:motor_direction') == 2",
+								"set_block_property": {
+									"outside:motor_direction": 5
+								}
+							},
+							{
+								"condition": "query.block_property('outside:motor_direction') == 3",
+								"set_block_property": {
+									"outside:motor_direction": 6
+								}
+							},
+							{
+								"condition": "query.block_property('outside:motor_direction') == 4",
+								"set_block_property": {
+									"outside:motor_direction": 1
+								}
+							},
+							{
+								"condition": "query.block_property('outside:motor_direction') == 5",
+								"set_block_property": {
+									"outside:motor_direction": 2
+								}
+							},
+							{
+								"condition": "query.block_property('outside:motor_direction') == 6",
+								"set_block_property": {
+									"outside:motor_direction": 3
+								}
+							},
+							{
+								"condition": "query.block_property('outside:motor_direction') == 7",
+								"set_block_property": {
+									"outside:motor_direction": 0
+								}
+							}
+						]
+					},
+					{
+						"condition": "query.get_equipped_item_name == 'shaft_item'",
+						"sequence": [
+							{
+								"condition": "query.block_property('outside:motor_direction') == 4",
+								"run_command": {
+									"command": [
+										"setblock ~ ~ ~1 outside:shaft_4_s"
+									]
+								},
+								"decrement_stack": {}
+							},
+							{
+								"condition": "query.block_property('outside:motor_direction') == 5",
+								"run_command": {
+									"command": [
+										"setblock ~-1 ~ ~ outside:shaft_4_w"
+									]
+								},
+								"decrement_stack": {}
+							},
+							{
+								"condition": "query.block_property('outside:motor_direction') == 6",
+								"run_command": {
+									"command": [
+										"setblock ~1 ~ ~ outside:shaft_4_e"
+									]
+								},
+								"decrement_stack": {}
+							},
+							{
+								"condition": "query.block_property('outside:motor_direction') == 7",
+								"run_command": {
+									"command": [
+										"setblock ~ ~ ~-1 outside:shaft_4_n"
+									]
+								},
+								"decrement_stack": {}
+							}
+						]
+					}
+				]
+			}
+		}
+	}
+}

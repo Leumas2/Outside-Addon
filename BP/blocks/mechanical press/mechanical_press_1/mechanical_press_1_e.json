@@ -1,0 +1,95 @@
+{
+	"format_version": "1.17.0",
+	"minecraft:block": {
+		"description": {
+			"identifier": "outside:mechanical_press_1_e"
+		},
+		"components": {
+			"minecraft:geometry": "geometry.mechanical_press",
+			"minecraft:destroy_time": 999999999,
+			"minecraft:explosion_resistance": 0,
+			"minecraft:block_light_emission": 0,
+			"minecraft:block_light_absorption": 0,
+			"minecraft:material_instances": {
+				"*": {
+					"texture": "mechanical_press_p",
+					"render_method": "alpha_test"
+				}
+			},
+			"minecraft:on_interact": {
+				"event": "outside:mechanical_press_interact"
+			},
+			"minecraft:rotation": [
+				0,
+				270,
+				0
+			],
+			"minecraft:loot": "loot_tables/mechanical_press.json",
+			"minecraft:crafting_table": {
+				"custom_description": "Mechanical Press",
+				"grid_size": 3,
+				"crafting_tags": [
+					"mechanical_press"
+				]
+			},
+			"minecraft:ticking": {
+				"looping": true,
+				"range": [
+					0.4,
+					0.4
+				],
+				"on_tick": {
+					"event": "outside:loot",
+					"target": "self"
+				}
+			}
+		},
+		"events": {
+			"outside:mechanical_press_interact": {
+				"sequence": [
+					{
+						"condition": "query.get_equipped_item_name == 'remover'",
+						"run_command": {
+							"command": [
+								"setblock ~ ~ ~ minecraft:air",
+								"give @p outside:mechanical_press_item"
+							]
+						}
+					},
+					{
+						"condition": "query.get_equipped_item_name == 'goggles'",
+						"run_command": {
+							"command": [
+								"title @p actionbar 0 blocks left"
+							]
+						}
+					},
+					{
+						"condition": "query.get_equipped_item_name == 'iron_ingot'",
+						"run_command": {
+							"command": [
+								"say Test"
+							]
+						},
+						"decrement_stack": {}
+					},
+					{
+						"condition": "query.get_equipped_item_name == 'crafting_table'",
+						"run_command": {
+							"command": [
+								"setblock ~ ~1 ~ outside:mechanical_press_head"
+							]
+						}
+					}
+				]
+			},
+			"outside:loot": {
+				"run_command": {
+					"command": [
+						"function mechanical_press/mechanical_press_1/autopress_1_e"
+					]
+				}
+			}
+		}
+	}
+}
