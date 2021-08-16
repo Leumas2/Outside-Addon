@@ -1,0 +1,16 @@
+{
+	"pools": [
+		{
+			"rolls": 1,
+			"entries": [
+				{
+					"type": "item",
+					"name": "outside:zinc_ore_item",
+					"pools": {
+						"rolls": 1
+					}
+				}
+			]
+		}
+	]
+}
