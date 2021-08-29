@@ -99,6 +99,15 @@
 							]
 						},
 						"decrement_stack": {}
+					},
+					{
+						"condition": "query.get_equipped_item_name == 'gearbox_v_item'",
+						"run_command": {
+							"command": [
+								"setblock ~ ~ ~-1 outside:gearbox_v_3_n_u"
+							]
+						},
+						"decrement_stack": {}
 					}
 				]
 			}
