@@ -1,0 +1,45 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:attachable": {
+		"description": {
+			"identifier": "outside:wrench",
+			"materials": {
+				"default": "entity_alphatest",
+				"enchanted": "entity_alphatest_glint"
+			},
+			"textures": {
+				"default": "textures/models/wrench",
+				"enchanted": "textures/misc/enchanted_item_glint"
+			},
+			"geometry": {
+				"default": "geometry.wrench"
+			},
+			"animations": {
+				"wield_controller": "controller.animation.wrench.wield",
+				"wield": "animation.wrench.first_person_wield",
+				"default": "animation.wrench.first_person_default",
+				"hold": "animation.wrench.first_person",
+				"punch": "animation.wrench.first_person_punch"
+			},
+			"scripts": {
+				"pre_animation": [
+					"variable.wrench = query.get_equipped_item_name('main_hand') == 'wrench';"
+				],
+				"animate": [
+					{
+						"wield_controller": "c.is_first_person && variable.wrench"
+					},
+					{
+						"default": "variable.wrench"
+					},
+					{
+						"hold": "c.is_first_person && variable.wrench"
+					}
+				]
+			},
+			"render_controllers": [
+				"controller.render.item_default"
+			]
+		}
+	}
+}
