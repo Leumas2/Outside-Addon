@@ -5,7 +5,7 @@
 			"loop": true,
 			"bones": {
 				"screen": {
-					"scale": 0
+					"scale": 1
 				}
 			}
 		},
