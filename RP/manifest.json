@@ -48,5 +48,12 @@
 			"name": "Without Gradient",
 			"memory_tier": 0
 		}
-	]
+	],
+	"metadata": {
+		"generated_with": {
+			"bridge": [
+				"2.1.1"
+			]
+		}
+	}
 }
