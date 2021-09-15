@@ -1,0 +1,23 @@
+{
+	"format_version": "1.17.0",
+	"minecraft:recipe_shapeless": {
+		"description": {
+			"identifier": "outside:paper_press"
+		},
+		"tags": [
+			"mechanical_press"
+		],
+		"ingredients": [
+			{
+				"item": "minecraft:sugar_cane",
+				"count": 1
+			}
+		],
+		"result": [
+			{
+				"item": "minecraft:paper",
+				"count": 1
+			}
+		]
+	}
+}

@@ -1,0 +1,27 @@
+{
+	"format_version": "1.17.0",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "outside:zinc_ingot_1"
+		},
+		"tags": [
+			"crafting_table"
+		],
+		"pattern": [
+			"zzz",
+			"zzz",
+			"zzz"
+		],
+		"key": {
+			"z": {
+				"item": "outside:zinc_nugget"
+			}
+		},
+		"result": [
+			{
+				"item": "outside:zinc_ingot",
+				"count": 1
+			}
+		]
+	}
+}

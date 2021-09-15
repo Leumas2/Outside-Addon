@@ -1,0 +1,26 @@
+{
+	"format_version": "1.17.0",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "outside:shaft"
+		},
+		"tags": [
+			"crafting_table"
+		],
+		"pattern": [
+			" a ",
+			" a "
+		],
+		"key": {
+			"a": {
+				"item": "outside:andesite_alloy"
+			}
+		},
+		"result": [
+			{
+				"item": "outside:shaft_item",
+				"count": 8
+			}
+		]
+	}
+}
