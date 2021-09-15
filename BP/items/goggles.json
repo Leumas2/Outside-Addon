@@ -1,0 +1,18 @@
+{
+	"format_version": "1.17.0",
+	"minecraft:item": {
+		"description": {
+			"identifier": "outside:goggles"
+		},
+		"components": {
+			"minecraft:icon": {
+				"texture": "goggles"
+			},
+			"minecraft:display_name": {
+				"value": "Engineer's Goggles"
+			},
+			"minecraft:max_stack_size": 1,
+			"minecraft:damage": 1
+		}
+	}
+}

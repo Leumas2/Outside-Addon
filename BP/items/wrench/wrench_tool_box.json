@@ -1,0 +1,44 @@
+{
+	"format_version": "1.17.0",
+	"minecraft:item": {
+		"description": {
+			"identifier": "outside:wrench_tool_box"
+		},
+		"components": {
+			"minecraft:icon": {
+				"texture": "wrench_tool_box"
+			},
+			"minecraft:display_name": {
+				"value": "Wrench Toolbox"
+			},
+			"minecraft:max_stack_size": 1,
+			"minecraft:damage": 1,
+			"minecraft:on_use": {
+				"on_use": {
+					"event": "outside:wrench_tool_box"
+				}
+			}
+		},
+		"events": {
+			"outside:wrench_tool_box": {
+				"sequence": [
+					{
+						"run_command": {
+							"command": "replaceitem entity @p slot.weapon.mainhand 0 minecraft:air"
+						}
+					},
+					{
+						"run_command": {
+							"command": "give @s outside:wrench"
+						}
+					},
+					{
+						"run_command": {
+							"command": "give @s outside:remover"
+						}
+					}
+				]
+			}
+		}
+	}
+}
