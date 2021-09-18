@@ -113,6 +113,15 @@
 							]
 						},
 						"decrement_stack": {}
+					},
+					{
+						"condition": "query.get_equipped_item_name == 'mechanical_drill_item'",
+						"run_command": {
+							"command": [
+								"setblock ~-1 ~ ~ outside:mechanical_drill_w"
+							]
+						},
+						"decrement_stack": {}
 					}
 				]
 			}

@@ -88,10 +88,10 @@
 						"decrement_stack": {}
 					},
 					{
-						"condition": "query.get_equipped_item_name == 'gearbox_v_item'",
+						"condition": "query.get_equipped_item_name == 'mechanical_drill_item'",
 						"run_command": {
 							"command": [
-								"setblock ~ ~-1 ~ outside:gearbox_v_2_d_n"
+								"setblock  ~ ~-1 ~ outside:mechanical_drill_d"
 							]
 						},
 						"decrement_stack": {}
