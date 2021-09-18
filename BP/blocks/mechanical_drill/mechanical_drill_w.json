@@ -1,0 +1,78 @@
+{
+    "format_version": "1.17.0",
+    "minecraft:block": {
+        "description": {
+            "identifier": "outside:mechanical_drill_w"
+        },
+        "components": {
+            "minecraft:geometry": "geometry.mechanical_drill",
+            "minecraft:destroy_time": 999999999,
+            "minecraft:explosion_resistance": 0,
+            "minecraft:block_light_emission": 0,
+            "minecraft:block_light_absorption": 0,
+            "minecraft:material_instances": {
+                "*": {
+                    "texture": "mechanical_drill",
+                    "render_method": "alpha_test"
+                }
+            },
+            "minecraft:on_interact": {
+                "event": "outside:mechanical_drill_interact"
+            },
+            "minecraft:rotation": [
+                0,
+                90,
+                0
+            ],
+            "minecraft:ticking": {
+                "looping": true,
+                "range": [
+                    0.5,
+                    0.5
+                ],
+                "on_tick": {
+                    "event": "outside:break",
+                    "target": "self"
+                }
+            },
+            "minecraft:on_placed": {
+                "event": "outside:spawn"
+            }
+        },
+        "events": {
+            "outside:mechanical_drill_interact": {
+                "sequence": [
+                    {
+                        "condition": "query.get_equipped_item_name == 'remover'",
+                        "run_command": {
+                            "command": [
+                                "setblock ~ ~ ~ minecraft:air",
+                                "give @p outside:mechanical_drill_item"
+                            ]
+                        }
+                    },
+                    {
+                        "condition": "query.get_equipped_item_name == 'goggles'",
+                        "run_command": {
+                            "command": [
+                                "title @p actionbar 0 blocks left"
+                            ]
+                        }
+                    }
+                ]
+            },
+            "outside:break": {
+                "run_command": {
+                    "command": [
+                        "function mechanical_drill/mechanical_drill_w"
+                    ]
+                }
+            },
+            "outside:spawn": {
+                "run_command": {
+                    "command": "summon outside:mechanical_drill ~ ~ ~"
+                }
+            }
+        }
+    }
+}
