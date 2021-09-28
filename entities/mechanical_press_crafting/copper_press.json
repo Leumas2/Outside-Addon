@@ -1,0 +1,24 @@
+{
+	"format_version": "1.8.0",
+	"minecraft:entity": {
+		"description": {
+			"identifier": "outside:copper_press",
+			"is_spawnable": false,
+			"is_summonable": true,
+			"is_experimental": false
+		},
+		"components": {
+			"minecraft:scale": {
+				"value": 0
+			},
+			"minecraft:loot": {
+				"table": "loot_tables/mechanical_press_loot/copper_press.json"
+			},
+			"minecraft:type_family": {
+				"family": [
+					"mechanical_press_loot"
+				]
+			}
+		}
+	}
+}
