@@ -1,0 +1,69 @@
+{
+    "format_version": "1.17.0",
+    "minecraft:block": {
+        "description": {
+            "identifier": "outside:gearbox_v_3_n_d"
+        },
+        "components": {
+            "minecraft:geometry": "geometry.gearbox_v",
+            "minecraft:destroy_time": 999999999,
+            "minecraft:explosion_resistance": 0,
+            "minecraft:block_light_emission": 0,
+            "minecraft:block_light_absorption": 0,
+            "minecraft:material_instances": {
+                "*": {
+                    "texture": "gearbox_v",
+                    "render_method": "alpha_test"
+                }
+            },
+            "minecraft:on_interact": {
+                "event": "outside:gearbox_v_interact"
+            },
+            "minecraft:rotation": [
+                -180,
+                0,
+                0
+            ]
+        },
+        "events": {
+            "outside:gearbox_v_interact": {
+                "sequence": [
+                    {
+                        "condition": "query.get_equipped_item_name == 'remover'",
+                        "run_command": {
+                            "command": [
+                                "setblock ~ ~ ~ minecraft:air",
+                                "give @p outside:gearbox_v_item"
+                            ]
+                        }
+                    },
+                    {
+                        "condition": "query.get_equipped_item_name == 'goggles'",
+                        "run_command": {
+                            "command": [
+                                "title @p actionbar 3 blocks left"
+                            ]
+                        }
+                    },
+                    {
+                        "condition": "query.get_equipped_item_name == 'shaft_item'",
+                        "run_command": {
+                            "command": [
+                                "setblock~ ~-1 ~ outside:shaft_3_d"
+                            ]
+                        },
+                        "decrement_stack": {}
+                    },
+                    {
+                        "condition": "query.get_equipped_item_name == 'wrench'",
+                        "run_command": {
+                            "command": [
+                                "setblock ~ ~ ~ outside:gearbox_v_3_n_u"
+                            ]
+                        }
+                    }
+                ]
+            }
+        }
+    }
+}
