@@ -1,0 +1,48 @@
+Â§6Outside Addon
+Â§3By Bedrock Miners Team
+
+Â§rSet you game language to english-us or many things in the addon won't WORK.
+Â§rChoose your resource pack setting to customize your game.
+
+This addon is inspired by the Create mod on java, currently Create's version is 0.3, Outside's current version is 0.02, soon we will catch up since we can't add every single feature.
+Â§6Â§lYoutube:
+Â§rShowcases will happen on this channel: Â§1youtube.com/channel/UCs-47MHBBs-yxEm2kjp0sZg 
+Â§0Contraption showcases will happen on this channel:Â§1https://www.youtube.com/channel/UC235kWGWVW_ck2oW0VFsXsA 	 
+Â§6Â§lBedrock Miners Team:
+Â§rStrong Miner - Addon Maker, K1N6mc - Tester, Nottorrider - Showcase Map Builder, Tubs - Addon Maker, Sir Chaton - Item Texturer, TheMidFord - Block Texturer, AmberMods - Addon Creator
+Â§4Problems:
+You can make infinite power by removing some bits of the contraption, you can if you want, but if you wanna play the fun and not cheaty way, use the power system correctly
+Â§1Power System:
+A normal power source creates 4 blocks of power with 16 RPM
+A powerful power source creates 1 block of power with 64 RPM - NOT ADDED YET
+Every machine you have in your contraption decreases the blocks left with power
+Â§2Goggles
+You can use goggles to see how much power each machine has by using it on a block
+
+Â§3Wrench
+You can use the wrench to turn certain blocks
+Â§5Remover
+You can use remover to remove blocks since the blocks are unbreakable
+Â§cMotor
+You can only get the motor in creative mode and will generate 4 blocks of power with 16 RPM or 1 block of power with 64 RPM - Currently 1 block of power with 64 RPM has not been added yet
+Â§6Shaft
+The shaft is used to move power, to place a machine, you can't place it anywhere else except for after the shaft
+Â§1Cogwheel
+There aren't a small cogwheel and a big cogwheel it is just one cogwheel, the cogwheel is the same thing as the shaft, placable only after shaft
+Â§2Gearboxes
+You can use gearboxes to turn your contraption, placable only after shaft
+You can even use vertical gearboxes to turn your contraption upwards, shafts and cogwheels are only placable when upwards
+Â§4Mechanical Press
+This machine compresses certain items into sheet forms when they are thrown under it.
+Â§8Iron Sheet
+You can obtain this item by throwing a iron ingot under a mechanical press and it will turn into a iron sheet.
+Â§3Gold Sheet
+You can obtain this item by throwing a gold ingot under a mechanical press and it will turn into a gold sheet.
+Â§6Copper Sheet
+You can obtain this item by throwing a copper ingot under a mechanical press and it will turn into a copper sheet.
+Â§2Brass Sheet
+You can obtain this item by throwing a brass ingot under a mechanical press and it will turn into a brass sheet.
+Â§5Andesite Alloy 
+You can obtain this item by crafting it in a crafting table. The way you craft it is with 2 iron/zinc nuggets and 2 andesite. Then you need to place the 2 iron/zinc nuggets diagonal from each other and do the same with the andesite
+Â§7Mechanical Drill 
+The Mechanical Drill is a block used to break blocks.

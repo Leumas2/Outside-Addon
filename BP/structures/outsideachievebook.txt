@@ -1,0 +1,16 @@
+Â§6Outside Addon
+Â§3By Bedrock Miners Team
+
+Â§rSet you game language to english-us or many things in the addon won't WORK.
+Â§rChoose your resource pack setting to customize your game.
+
+This addon is inspired by the Create mod on java, currently Create's version is 0.3, Outside's current version is 0.02, soon we will catch up since we can't add every single feature.Â§6Â§lYoutube:
+Â§rShowcases will happen on this channel: Â§1youtube.com/channel/UCs-47MHBBs-yxEm2kjp0sZg 
+Â§0Contraption showcases will happen on this channel:Â§1https://www.youtube.com/channel/UC235kWGWVW_ck2oW0VFsXsA 	 
+Â§6Â§lBedrock Miners Team:
+Â§rStrong Miner - Addon Maker, K1N6mc - Tester, Nottorrider - Showcase Map Builder, Tubs - Addon Maker, Sir Chaton - Item Texturer, TheMidFord - Block Texturer, AmberMods - Addon Creator
+Â§4Problems:
+You can make infinite power by removing some bits of the contraption, you can if you want, but if you wanna play the fun and not cheaty way, use the power system correctly
+
+A§3Achievements:
+Cute Toolkit - Get wrench toolkit

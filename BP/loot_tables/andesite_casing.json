@@ -1,0 +1,16 @@
+{
+	"pools": [
+		{
+			"rolls": 1,
+			"entries": [
+				{
+					"type": "item",
+					"name": "outside:andesite_casing_item",
+					"pools": {
+						"rolls": 1
+					}
+				}
+			]
+		}
+	]
+}

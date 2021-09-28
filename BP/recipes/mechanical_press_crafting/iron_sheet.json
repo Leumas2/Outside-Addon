@@ -1,0 +1,23 @@
+{
+	"format_version": "1.17.0",
+	"minecraft:recipe_shapeless": {
+		"description": {
+			"identifier": "outside:iron_sheet"
+		},
+		"tags": [
+			"mechanical_press"
+		],
+		"ingredients": [
+			{
+				"item": "minecraft:iron_ingot",
+				"count": 1
+			}
+		],
+		"result": [
+			{
+				"item": "outside:iron_sheet",
+				"count": 1
+			}
+		]
+	}
+}
