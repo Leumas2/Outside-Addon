@@ -1,0 +1,21 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.goggles.first_person_default": {
+			"loop": true,
+			"bones": {
+				"screen": {
+					"scale": 1
+				}
+			}
+		},
+		"animation.goggles.first_person": {
+			"loop": true,
+			"bones": {
+				"bb_main": {
+					"scale": 0
+				}
+			}
+		}
+	}
+}

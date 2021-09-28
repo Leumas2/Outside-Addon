@@ -1,0 +1,44 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.wrench.first_person_default": {
+			"loop": true
+		},
+		"animation.wrench.is_using_item": {
+			"loop": true,
+			"bones": {
+				"item": {
+					"position": [2, 0, -1]
+				}
+			}
+		},
+		"animation.wrench.first_person": {
+			"loop": true,
+			"bones": {
+				"item": {
+					"rotation": [0, 25, 0],
+					"position": [16, -3, 8],
+					"scale": 1.5
+				}
+			}
+		},
+		"animation.wrench.first_person_punch": {
+			"loop": true,
+			"bones": {
+				"item": {
+					"rotation": [0, 155, 190],
+					"position": [15, 1, 21]
+				}
+			}
+		},
+		"animation.wrench.first_person_wield": {
+			"loop": true,
+			"bones": {
+				"item": {
+					"rotation": [0, 155, 190],
+					"position": [15, 1, 21]
+				}
+			}
+		}
+	}
+}
