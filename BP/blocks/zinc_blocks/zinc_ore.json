@@ -1,0 +1,22 @@
+{
+	"format_version": "1.17.0",
+	"minecraft:block": {
+		"description": {
+			"identifier": "outside:zinc_ore"
+		},
+		"components": {
+			"minecraft:geometry": "geometry.block",
+			"minecraft:destroy_time": 2,
+			"minecraft:explosion_resistance": 0,
+			"minecraft:block_light_emission": 0,
+			"minecraft:block_light_absorption": 0,
+			"minecraft:material_instances": {
+				"*": {
+					"texture": "zinc_ore",
+					"render_method": "alpha_test"
+				}
+			},
+			"minecraft:loot": "loot_tables/zinc_ore.json"
+		}
+	}
+}
