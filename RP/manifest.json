@@ -1,0 +1,61 @@
+{
+	"format_version": 2,
+	"header": {
+		"name": "pack.name",
+		"description": "pack.description",
+		"min_engine_version": [
+			1,
+			17,
+			0
+		],
+		"uuid": "eb9fb0e5-d7db-45b7-b16a-871cfbbf3830",
+		"version": [
+			1,
+			0,
+			0
+		]
+	},
+	"modules": [
+		{
+			"description": "This addon is inspired by the create mod, and will try to implement as many features",
+			"type": "resources",
+			"uuid": "9a18e228-fe9a-4ab1-8f8d-a8838aa78804",
+			"version": [
+				1,
+				0,
+				0
+			]
+		}
+	],
+	"subpacks": [
+		{
+			"folder_name": "Outside With Everything",
+			"name": "With Everything",
+			"memory_tier": 0
+		},
+		{
+			"folder_name": "Outside With Out Custom GUI",
+			"name": "Without Custom GUI",
+			"memory_tier": 0
+		},
+		{
+			"folder_name": "Outside With Out Custom GUI And Gradient",
+			"name": "Without Custom GUI and Gradient",
+			"memory_tier": 0
+		},
+		{
+			"folder_name": "Outside With Out Gradient",
+			"name": "Without Gradient",
+			"memory_tier": 0
+		}
+	],
+	"metadata": {
+		"generated_with": {
+			"bridge": [
+				"2.1.1",
+				"2.1.2",
+				"2.1.3"
+			]
+		}
+	}
+}
