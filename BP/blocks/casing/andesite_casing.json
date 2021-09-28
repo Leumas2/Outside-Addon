@@ -1,0 +1,22 @@
+{
+	"format_version": "1.17.0",
+	"minecraft:block": {
+		"description": {
+			"identifier": "outside:andesite_casing"
+		},
+		"components": {
+			"minecraft:geometry": "geometry.block",
+			"minecraft:destroy_time": 1,
+			"minecraft:explosion_resistance": 0,
+			"minecraft:block_light_emission": 0,
+			"minecraft:block_light_absorption": 0,
+			"minecraft:material_instances": {
+				"*": {
+					"texture": "andesite_casing",
+					"render_method": "alpha_test"
+				}
+			},
+			"minecraft:loot": "loot_tables/andesite_casing.json"
+		}
+	}
+}
